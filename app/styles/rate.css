@@ -1,0 +1,78 @@
+.txt-center {
+  text-align: center;
+}
+.hide {
+  display: none;
+}
+
+.clear {
+  float: none;
+  clear: both;
+}
+
+.rating {
+    width: 220px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    position: relative;
+}
+
+.rating > label {
+    float: right;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 1.1em;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label,
+.rating > input.radio-btn:checked ~ label {
+    color: transparent;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > input.radio-btn:checked ~ label:before,
+.rating > input.radio-btn:checked ~ label:before {
+    content: "\2605";
+    position: absolute;
+    left: 0;
+    color: rgb(255 195 30);
+    font-size: 40px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: var(--color-main);
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 3px 5px 7px 0px #88888891;
+}
+
+form label, form p {
+  color: white;
+}
+
+form textarea {
+  background-color: white;
+  height: 200px;
+  color: black;
+  margin-top: 20px;
+}
+
+form button:hover {
+  border-color: var(--color-background);
+}
+
+form .error {
+  color: #fd6363;
+  margin: -15px 0px 0px 0px;
+  font-size: 0.8rem;
+}
